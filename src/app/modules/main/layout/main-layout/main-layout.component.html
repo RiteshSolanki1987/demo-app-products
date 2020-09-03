@@ -1,0 +1,7 @@
+<mat-sidenav-container>
+  <app-header (menuClicked)="toggleSideBar();" (exitFromApp)="logOut();"></app-header>
+  <mat-sidenav #sidenav mode="side" class="sidemenu-back bottom-to-top">
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

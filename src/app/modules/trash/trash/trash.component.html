@@ -1,0 +1,29 @@
+<div fxlayout="row" style="flex-direction: row; box-sizing: border-box; display: flex; margin-top: 10px;">
+  <div fxflex="" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex;">
+    <div class="mat-form-field-wrapper" style="margin-left: 70px;">
+      <h2>Products In Trash</h2>
+    </div>
+  </div>
+</div>
+
+<div class='md-padding' layout="row" layout-wrap style="padding-left: 50px;">
+  <mat-card class="card-container" style="width: 350px;" *ngFor="let product of arrProducts; let i = index">
+    <img src="{{product.url}}" class="md-card-image" alt="product avatar">
+    <mat-card-content>
+      <h2>{{product?.title}}</h2>
+      <p>{{product?.price}}</p>
+      <p title="{{product?.description}}">{{product?.description | splitText}}</p>
+    </mat-card-content>
+    <div class="md-actions" layout="row">
+      <button mat-raised-button color="primary" (click)="restoreProductConfirm(product.id)">Restore</button>
+      <button mat-raised-button color="warn" style="margin-left:180px;"
+        (click)="removeProductConfirm(product.id)">Remove</button>
+    </div>
+  </mat-card>
+  <mat-card class="card-container" style="width: 100%;" *ngIf="arrProducts.length === 0">
+    <mat-card-content>
+      <h2>Products not found in Trash</h2>
+    </mat-card-content>
+  </mat-card>
+</div>
+<br />

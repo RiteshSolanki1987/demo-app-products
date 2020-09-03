@@ -1,0 +1,19 @@
+<div fxlayout="row" style="flex-direction: row; box-sizing: border-box; display: flex; margin-top: 10px;">
+  <div fxflex="" style="flex: 1 1 0%; box-sizing: border-box; flex-direction: row; display: flex;">
+    <div class="mat-form-field-wrapper" style="margin-left: 70px;">
+      <a href="javascript:void(0);" (click)="backToList();"> Back</a>
+    </div>
+  </div>
+</div>
+
+<div class='md-padding' layout="row" layout-wrap style="padding-left: 50px;">
+  <mat-card class="card-container" style="width: 350px;">
+    <img src="{{objProduct.url}}" class="md-card-image" alt="product avatar"><br />
+  </mat-card>
+
+  <mat-card-content>
+    <h2>Title: {{objProduct?.title}}</h2>
+    <p>Price: {{objProduct?.price}}</p>
+    <p>Description: {{objProduct?.description}}</p>
+  </mat-card-content>
+</div>

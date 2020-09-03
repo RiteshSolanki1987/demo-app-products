@@ -1,0 +1,20 @@
+<h2 class="mat-dialog-title">
+  {{title}}
+</h2>
+<div class="mat-typography mat-dialog-content" style="color: #000;">
+  <h3>{{message}}</h3>
+</div>
+<div align="end" class="mat-dialog-actions">
+  <button mat-raised-button type="button" color="primary" mat-raised-button="" class="mat-button mat-primary"
+    (click)="onConfirm()">
+    <span class="mat-button-wrapper">
+      Confirm
+    </span>
+  </button>
+  <button mat-raised-button type="button" color="warn" mat-raised-button="" class="mat-button mat-warn"
+    (click)="onDismiss()">
+    <span class="mat-button-wrapper">
+      Cancel
+    </span>
+  </button>
+</div>

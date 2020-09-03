@@ -1,0 +1,129 @@
+.container {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 50px !important;
+}
+
+.sidemenu-back {
+  width: 250px;
+  background: #3f51b5;
+  // background: url('../images//side-nav.jpg');
+}
+
+.bottom-to-top {
+  border: 0 solid;
+  border-right: 1px;
+  -o-border-image: linear-gradient(to top, #c1c1c1, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to top, #c1c1c1, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.mat-drawer-container {
+  min-height: 650px;
+}
+
+.mat-drawer-transition .mat-drawer-content {
+  transition-duration: .4s;
+  transition-timing-function: cubic-bezier(.25, .8, .25, 1);
+  transition-property: transform, margin-left, margin-right;
+}
+
+.header-box-shadow {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 50%;
+}
+
+.mat-form-field1 {
+  font-size: 14px;
+  width: 25%;
+}
+
+
+.marginContent {
+  margin: 1%;
+}
+
+.mat-cell {
+  font-size: 12px;
+}
+
+
+.mat-list-base .mat-list-item {
+  height: 45px !important;
+  font-family: Armata, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.divInfo {
+  background: #3f51b5;
+  height: 8px;
+  border-radius: 6px;
+  padding: 8px;
+  line-height: 6px;
+  width: 15%;
+}
+
+.divLeft {
+  float: left;
+}
+
+.divRight {
+  float: right;
+}
+
+.divFinalResult {
+  height: 8px;
+  border-radius: 6px;
+  padding: 8px;
+  line-height: 6px;
+  min-width: 20%;
+  width: 15%;
+}
+
+.resultSuccess {
+  background: #3f51b5;
+}
+
+.resultError {
+  background: #f44336;
+}
+
+.spinner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // position:fixed;top:50%;left:50%
+}
+
+.mat-icon {
+  line-height: 20px;
+}
+
+.mat-header-cell {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mat-drawer {
+  color: #fff;
+}
